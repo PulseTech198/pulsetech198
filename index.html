@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PulseTech | Eletrônicos</title>
+
+    <meta
+        name="description"
+        content="PulseTech - Eletrônicos e acessórios com ofertas especiais."
+    >
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- CABEÇALHO -->
+
+    <header class="header">
+
+        <div class="container header-content">
+
+            <a href="#" class="logo">
+                PULSE<span>TECH</span>
+            </a>
+
+            <nav class="menu">
+                <a href="#inicio">Início</a>
+                <a href="#produtos">Produtos</a>
+                <a href="#ofertas">Ofertas</a>
+                <a href="#contato">Contato</a>
+            </nav>
+
+            <button class="cart-button" onclick="abrirCarrinho()">
+                🛒 Carrinho
+                <span id="quantidadeCarrinho">0</span>
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <!-- HERO -->
+
+    <section class="hero" id="inicio">
+
+        <div class="container hero-content">
+
+            <div class="hero-text">
+
+                <p class="small-title">
+                    OFERTAS ESPECIAIS
+                </p>
+
+                <h1>
+                    TECNOLOGIA QUE
+                    <span>CABE NO SEU BOLSO.</span>
+                </h1>
+
+                <p>
+                    Encontre caixas de som, fones, carregadores,
+                    cabos e muito mais.
+                </p>
+
+                <a href="#produtos" class="main-button">
+                    VER PRODUTOS →
+                </a>
+
+            </div>
+
+
+            <div class="hero-product">
+
+                <div class="speaker-icon">
+                    🔊
+                </div>
+
+                <p>DESTAQUE DA SEMANA</p>
+
+                <h2>
+                    Caixa de Som Bluetooth
+                </h2>
+
+                <strong>
+                    R$ 99,90
+                </strong>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- OFERTAS -->
+
+    <section class="offers" id="ofertas">
+
+        <div class="container">
+
+            <div class="offer-content">
+
+                <div>
+
+                    <p>
+                        🔥 OFERTA LIMITADA
+                    </p>
+
+                    <h2>
+                        ATÉ 30% DE DESCONTO
+                    </h2>
+
+                    <span>
+                        Aproveite enquanto durar o estoque.
+                    </span>
+
+                </div>
+
+                <a href="#produtos">
+                    COMPRAR AGORA
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- PRODUTOS -->
+
+    <section class="products-section" id="produtos">
+
+        <div class="container">
+
+            <div class="section-header">
+
+                <div>
+
+                    <p class="small-title">
+                        CATÁLOGO
+                    </p>
+
+                    <h2>
+                        Nossos produtos
+                    </h2>
+
+                </div>
+
+
+                <div class="filters">
+
+                    <button
+                        class="filter active"
+                        onclick="filtrarProdutos('todos', this)"
+                    >
+                        Todos
+                    </button>
+
+                    <button
+                        class="filter"
+                        onclick="filtrarProdutos('som', this)"
+                    >
+                        Som
+                    </button>
+
+                    <button
+                        class="filter"
+                        onclick="filtrarProdutos('acessorios', this)"
+                    >
+                        Acessórios
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <div
+                class="products-grid"
+                id="listaProdutos"
+            >
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- BENEFÍCIOS -->
+
+    <section class="benefits">
+
+        <div class="container benefits-grid">
+
+            <div class="benefit">
+
+                <div class="benefit-icon">
+                    ⚡
+                </div>
+
+                <div>
+
+                    <h3>
+                        Compra fácil
+                    </h3>
+
+                    <p>
+                        Escolha seus produtos e adicione ao carrinho.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="benefit">
+
+                <div class="benefit-icon">
+                    🔒
+                </div>
+
+                <div>
+
+                    <h3>
+                        Atendimento
+                    </h3>
+
+                    <p>
+                        Tire suas dúvidas diretamente com nossa loja.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="benefit">
+
+                <div class="benefit-icon">
+                    📦
+                </div>
+
+                <div>
+
+                    <h3>
+                        Envio
+                    </h3>
+
+                    <p>
+                        Combine a forma de entrega no momento do pedido.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- RODAPÉ -->
+
+    <footer id="contato">
+
+        <div class="container footer-grid">
+
+            <div>
+
+                <a href="#" class="logo">
+                    PULSE<span>TECH</span>
+                </a>
+
+                <p>
+                    Eletrônicos e acessórios.
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <h3>
+                    Contato
+                </h3>
+
+                <p>
+                    WhatsApp: (55) 99999-9999
+                </p>
+
+                <p>
+                    Instagram: @pulsetech
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <h3>
+                    Atendimento
+                </h3>
+
+                <p>
+                    Segunda a sexta
+                </p>
+
+                <p>
+                    09:00 às 18:00
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="copyright">
+
+            © 2026 PulseTech.
+            Todos os direitos reservados.
+
+        </div>
+
+    </footer>
+
+
+    <!-- CARRINHO -->
+
+    <div
+        class="cart-overlay"
+        id="cartOverlay"
+        onclick="fecharCarrinho(event)"
+    >
+
+        <aside
+            class="cart"
+            onclick="event.stopPropagation()"
+        >
+
+            <div class="cart-header">
+
+                <h2>
+                    Seu carrinho
+                </h2>
+
+                <button onclick="fecharCarrinho()">
+                    ✕
+                </button>
+
+            </div>
+
+
+            <div
+                id="itensCarrinho"
+                class="cart-items"
+            >
+            </div>
+
+
+            <div class="cart-footer">
+
+                <div class="cart-total">
+
+                    <span>
+                        Total
+                    </span>
+
+                    <strong id="totalCarrinho">
+                        R$ 0,00
+                    </strong>
+
+                </div>
+
+
+                <button
+                    class="checkout-button"
+                    onclick="finalizarPedido()"
+                >
+                    FINALIZAR PEDIDO PELO WHATSAPP
+                </button>
+
+            </div>
+
+        </aside>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
